@@ -20,7 +20,7 @@ function resolveSiteUrl() {
     return "http://localhost:3000";
   }
 
-  return "https://bitbridgeclt.com";
+  return "https://www.bitbridgeclt.com";
 }
 
 export const siteUrl = resolveSiteUrl();
