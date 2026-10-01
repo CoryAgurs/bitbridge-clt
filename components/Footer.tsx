@@ -49,7 +49,7 @@ export function Footer() {
           </nav>
         </div>
         <p className="mt-10 border-t border-white/10 pt-6 text-sm text-paper/50">
-          © {site.year} {site.name}. All rights reserved.
+          © {site.year} {site.legalName}. All rights reserved.
         </p>
       </Container>
     </footer>

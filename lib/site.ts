@@ -27,6 +27,7 @@ export const siteUrl = resolveSiteUrl();
 
 export const site = {
   name: "BitBridge CLT",
+  legalName: "BBC LLC",
   tagline: "AI systems integration for Charlotte businesses",
   city: "Charlotte, NC",
   email: "bitbridgeco@gmail.com",
