@@ -33,7 +33,7 @@ export const site = {
   email: "bitbridgeco@gmail.com",
   // Business line. Leave display empty to hide it everywhere.
   // e.g. { display: "(704) 555-0123", tel: "+17045550123" }
-  phone: { display: "", tel: "" },
+  phone: { display: "(980) 277-1970", tel: "+19802771970" },
   instagram: {
     handle: "@bit.bridge",
     url: "https://www.instagram.com/bit.bridge/",
@@ -43,6 +43,11 @@ export const site = {
     role: "Founder",
     photo: "/cory-agurs.jpg",
     certification: { name: "CompTIA Security+", year: 2021 },
+    book: {
+      title: "My Journey with AI",
+      year: 2023,
+      url: "https://www.amazon.com/dp/B0CP9B8WVZ",
+    },
     profiles: [
       {
         label: "LinkedIn",

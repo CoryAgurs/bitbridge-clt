@@ -76,7 +76,16 @@ export function Differentiators() {
                   I spent 20+ years in customer service and operations
                   leadership, so I know exactly what busywork costs a team.
                   Today I&apos;m a full-stack developer and an early AI
-                  practitioner. I co-authored a book on applied AI in 2023.
+                  practitioner. In {founder.book.year} I co-authored{" "}
+                  <a
+                    href={founder.book.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium italic text-paper underline underline-offset-4 hover:text-copper"
+                  >
+                    {founder.book.title}
+                  </a>
+                  .
                 </p>
                 <p>
                   I earned my {founder.certification.name} certification in{" "}
