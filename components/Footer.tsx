@@ -32,6 +32,32 @@ export function Footer() {
               {" · "}
               {site.city}
             </p>
+            {site.phone.display ? (
+              <p className="mt-2 text-sm text-paper/80">
+                <a
+                  href={`tel:${site.phone.tel}`}
+                  className="underline-offset-4 hover:underline"
+                >
+                  {site.phone.display}
+                </a>
+              </p>
+            ) : null}
+            <p className="mt-2 text-sm text-paper/60">
+              {site.founder.name}:{" "}
+              {site.founder.profiles.slice(0, 2).map((profile, index) => (
+                <span key={profile.label}>
+                  {index > 0 ? " · " : null}
+                  <a
+                    href={profile.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-paper/80 underline-offset-4 hover:underline"
+                  >
+                    {profile.label}
+                  </a>
+                </span>
+              ))}
+            </p>
           </div>
           <nav aria-label="Footer">
             <ul className="flex flex-col gap-3 sm:items-end">

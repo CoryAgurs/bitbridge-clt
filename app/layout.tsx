@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   },
   description: site.pitch,
   applicationName: site.name,
-  authors: [{ name: "Cory Agurs", url: siteUrl }],
-  creator: "Cory Agurs",
+  authors: [{ name: site.founder.name, url: site.founder.profiles[0].url }],
+  creator: site.founder.name,
   alternates: {
     canonical: "/",
   },
