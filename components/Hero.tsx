@@ -11,12 +11,15 @@ export function Hero() {
             Charlotte, NC · AI Systems Integration
           </p>
           <h1 className="mt-4 font-serif text-[2.15rem] leading-[1.15] font-semibold tracking-tight text-paper sm:text-5xl sm:leading-[1.12] lg:text-[3.35rem]">
-            Your business is drowning in busywork. We teach it to swim.
+            Secure Automation Systems for Charlotte Small Businesses
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-7 text-paper/80 sm:text-lg sm:leading-8">
-            BitBridge CLT builds AI-powered systems into the tools your team
-            already uses — no rip-and-replace, no six-month rollout, no jargon.
-            Just fewer hours lost to copy-paste work.
+          <p className="mt-5 max-w-xl font-serif text-xl leading-snug font-medium tracking-tight text-paper sm:text-2xl">
+            Your business is drowning in busywork. We teach it to swim.
+          </p>
+          <p className="mt-4 max-w-xl text-base leading-7 text-paper/80 sm:text-lg sm:leading-8">
+            We find the leaks — missed calls, slow quote follow-up, scheduling —
+            and plug them with AI-powered systems that work inside the tools you
+            already use. No rip-and-replace, no six-month rollout, no jargon.
           </p>
           <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
             <AuditButton variant="onDark">Get a Free Workflow Audit</AuditButton>
