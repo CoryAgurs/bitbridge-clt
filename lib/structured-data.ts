@@ -46,6 +46,8 @@ export const siteGraph = {
       image: logoUrl,
       description: site.summary,
       ...contact,
+      // Coarse signal only; the exact figures live in the page copy and llms.txt.
+      priceRange: "$$",
       parentOrganization: { "@id": ids.organization },
       founder: { "@id": ids.founder },
       address,

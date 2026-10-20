@@ -1,3 +1,4 @@
+import { pricing, securityLine } from "@/lib/facts";
 import { site, siteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -16,12 +17,13 @@ ${site.city}, led by founder ${site.founder.name}. ${site.name} builds AI-powere
 systems into the tools a business already uses (CRM, inbox, scheduling tool,
 intake forms), with no rip-and-replace. ${site.founder.name} holds a
 ${site.founder.certification.name} certification (${site.founder.certification.year}).
+${securityLine}
 
 ## Services
 - Free Workflow Audit (20 minutes): maps where a team is losing time; the
   client gets the findings either way.
-- Workflow Automation: AI-driven systems for quote follow-ups, data entry,
-  appointment scheduling, and document generation.
+- Workflow Automation: AI-driven systems for missed-call capture, quote
+  follow-ups, data entry, appointment scheduling, and document generation.
 - System Integration: connects AI into existing tools such as QuickBooks,
   HubSpot, and Salesforce.
 - Custom AI Tools: internal tools, dashboards, and assistants built around how
@@ -30,6 +32,8 @@ ${site.founder.certification.name} certification (${site.founder.certification.y
   systems.
 
 ## Pricing
+- Secure agent coverage: ${pricing.coverage}.
+- For comparison, one additional hire typically costs ${pricing.hire}.
 - Every engagement starts with the free 20-minute workflow audit.
 - After the audit, clients get a flat quote before any work begins. No hourly
   billing.
@@ -45,8 +49,8 @@ ${site.founder.certification.name} certification (${site.founder.certification.y
 
 ## Service area
 ${site.city} and the Charlotte metro area. Local, in-person engagements with
-small businesses (10-200 employees), primarily contractors, professional
-services, real estate, and local retail.
+small businesses (10-200 employees), primarily contractors and home-services
+trades, professional services, real estate, and local retail.
 
 ## Contact
 - Phone: ${site.phone.display}

@@ -2,24 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { AuditButton } from "@/components/AuditButton";
+import { PhoneIcon, phoneHref } from "@/components/CallLink";
 import { Container } from "@/components/Container";
 import { Logo } from "@/components/Logo";
 import { navLinks, site } from "@/lib/site";
-
-const phoneHref = site.phone.tel ? `tel:${site.phone.tel}` : null;
-
-function PhoneIcon({ className }: { className: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true">
-      <path
-        d="M5 4h3.5l1.6 4.2-2.1 1.4a11 11 0 005.4 5.4l1.4-2.1L19 14.5V18a2 2 0 01-2 2A14 14 0 013 6a2 2 0 012-2z"
-        stroke="currentColor"
-        strokeWidth="1.75"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 export function Header() {
   const [open, setOpen] = useState(false);

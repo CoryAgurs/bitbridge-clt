@@ -1,4 +1,5 @@
 import { AuditButton } from "@/components/AuditButton";
+import { CallLink } from "@/components/CallLink";
 import { Container } from "@/components/Container";
 
 export function FinalCta() {
@@ -12,8 +13,9 @@ export function FinalCta() {
           Book a free 20-minute workflow audit. No obligation, no sales pitch —
           just a clear look at where AI could save you time.
         </p>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center sm:gap-6">
           <AuditButton variant="onDark">Get My Free Audit</AuditButton>
+          <CallLink variant="onDark" />
         </div>
       </Container>
     </section>

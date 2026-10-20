@@ -1,4 +1,5 @@
 import { AuditButton } from "@/components/AuditButton";
+import { CallLink } from "@/components/CallLink";
 import { Container } from "@/components/Container";
 
 export function Pricing() {
@@ -13,8 +14,9 @@ export function Pricing() {
           audit — not a generic package. After that, you&apos;ll get a flat quote
           before any work begins. No hourly billing surprises, no scope creep.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:gap-6">
           <AuditButton>Book Your Free Audit</AuditButton>
+          <CallLink />
         </div>
       </Container>
     </section>

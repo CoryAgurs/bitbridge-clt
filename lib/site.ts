@@ -76,7 +76,7 @@ export const site = {
   title: "BitBridge CLT | AI Systems Integration for Charlotte Businesses",
   // Plain-language summary for structured data and llms.txt. Only state facts the page states.
   summary:
-    "BitBridge CLT integrates secure AI automation into the tools Charlotte-area small businesses already use: quote follow-up, scheduling, data entry, and free workflow audits.",
+    "BitBridge CLT integrates secure AI automation into the tools Charlotte-area small businesses already use: missed-call capture, quote follow-up, scheduling, data entry, and free workflow audits.",
   // Meta, Open Graph, and Twitter description. Keep it within 130–155 characters.
   description:
     "BitBridge CLT builds secure AI automation for Charlotte small businesses: quote follow-up, scheduling, data entry. Free 20-min audit: (980) 277-1970.",

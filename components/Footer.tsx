@@ -12,14 +12,31 @@ export function Footer() {
             <p className="mt-3 max-w-xs text-sm leading-6 text-paper/70">
               {site.tagline}
             </p>
-            <p className="mt-4 text-sm text-paper/80">
+            {/* NAP block: keep name, locality, and phone character-identical to the schema and llms.txt. */}
+            <address className="mt-4 text-sm not-italic leading-6 text-paper/80">
+              <span className="font-semibold text-paper">{site.name}</span>
+              {" · "}
+              {site.city}
+              {site.phone.display ? (
+                <>
+                  {" · "}
+                  <a
+                    href={`tel:${site.phone.tel}`}
+                    className="underline-offset-4 hover:underline"
+                  >
+                    {site.phone.display}
+                  </a>
+                </>
+              ) : null}
+              {" · "}
               <a
                 href={`mailto:${site.email}`}
                 className="underline-offset-4 hover:underline"
               >
                 {site.email}
               </a>
-              {" · "}
+            </address>
+            <p className="mt-2 text-sm text-paper/80">
               <a
                 href={site.instagram.url}
                 target="_blank"
@@ -27,21 +44,9 @@ export function Footer() {
                 aria-label="BitBridge CLT on Instagram"
                 className="underline-offset-4 hover:underline"
               >
-                {site.instagram.handle}
+                Instagram {site.instagram.handle}
               </a>
-              {" · "}
-              {site.city}
             </p>
-            {site.phone.display ? (
-              <p className="mt-2 text-sm text-paper/80">
-                <a
-                  href={`tel:${site.phone.tel}`}
-                  className="underline-offset-4 hover:underline"
-                >
-                  {site.phone.display}
-                </a>
-              </p>
-            ) : null}
             <p className="mt-2 text-sm text-paper/60">
               {site.founder.name}:{" "}
               {site.founder.profiles.slice(0, 2).map((profile, index) => (

@@ -1,9 +1,10 @@
 import { Container } from "@/components/Container";
+import { securityLine } from "@/lib/facts";
 
 const services = [
   {
     title: "Workflow Automation",
-    body: "We identify the repetitive tasks eating your team's time and build AI-driven systems that handle them — quote follow-ups, data entry, appointment scheduling, document generation.",
+    body: "We identify the repetitive tasks eating your team's time and build AI-driven systems that handle them — missed-call capture, quote follow-ups, data entry, appointment scheduling, document generation.",
   },
   {
     title: "System Integration",
@@ -47,6 +48,24 @@ export function Services() {
             </li>
           ))}
         </ul>
+        <p className="mt-8 flex max-w-3xl items-start gap-3 text-base leading-7 font-medium text-navy sm:text-lg sm:leading-8">
+          <svg viewBox="0 0 16 16" className="mt-1.5 h-5 w-5 shrink-0 text-copper" fill="none" aria-hidden="true">
+            <path
+              d="M8 1.5l5 2v4c0 3.2-2.1 5.9-5 7-2.9-1.1-5-3.8-5-7v-4l5-2z"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M5.5 8l1.8 1.8L10.8 6.3"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          {securityLine}
+        </p>
       </Container>
     </section>
   );

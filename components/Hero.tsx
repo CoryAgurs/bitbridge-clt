@@ -1,4 +1,5 @@
 import { AuditButton } from "@/components/AuditButton";
+import { CallLink } from "@/components/CallLink";
 import { Container } from "@/components/Container";
 import { HeroDiagram } from "@/components/HeroDiagram";
 
@@ -21,8 +22,9 @@ export function Hero() {
             and plug them with AI-powered systems that work inside the tools you
             already use. No rip-and-replace, no six-month rollout, no jargon.
           </p>
-          <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-6">
             <AuditButton variant="onDark">Get a Free Workflow Audit</AuditButton>
+            <CallLink variant="onDark" />
             <a
               href="#process"
               className="inline-flex min-h-12 items-center justify-center text-base font-medium text-paper/80 underline-offset-4 hover:text-paper hover:underline"

@@ -1,3 +1,4 @@
+import { AtAGlance } from "@/components/AtAGlance";
 import { Differentiators } from "@/components/Differentiators";
 import { Faq } from "@/components/Faq";
 import { FinalCta } from "@/components/FinalCta";
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Problem />
         <Services />
+        <AtAGlance />
         <Differentiators />
         <Process />
         <Onboarding />

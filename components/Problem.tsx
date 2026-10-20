@@ -1,4 +1,5 @@
 import { AuditButton } from "@/components/AuditButton";
+import { CallLink } from "@/components/CallLink";
 import { Container } from "@/components/Container";
 
 const pains = [
@@ -43,8 +44,9 @@ export function Problem() {
         <p className="mt-10 max-w-2xl font-serif text-2xl font-medium tracking-tight text-navy sm:text-3xl">
           None of this needs a new hire. It needs the right system.
         </p>
-        <div className="mt-8">
+        <div className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:gap-6">
           <AuditButton>Get a Free Workflow Audit</AuditButton>
+          <CallLink />
         </div>
       </Container>
     </section>
