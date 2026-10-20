@@ -38,6 +38,7 @@ export const site = {
     handle: "@bit.bridge",
     url: "https://www.instagram.com/bit.bridge/",
   },
+  googleBusinessProfile: "https://share.google/bPfbsQD6VEJLVmUUm",
   founder: {
     name: "Cory Agurs",
     role: "Founder",

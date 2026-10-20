@@ -36,7 +36,7 @@ export const siteGraph = {
       logo: logoUrl,
       description: site.summary,
       ...contact,
-      sameAs: [site.instagram.url],
+      sameAs: [site.instagram.url, site.googleBusinessProfile],
     },
     {
       "@type": "ProfessionalService",
@@ -48,6 +48,7 @@ export const siteGraph = {
       ...contact,
       // Coarse signal only; the exact figures live in the page copy and llms.txt.
       priceRange: "$$",
+      sameAs: [site.googleBusinessProfile],
       parentOrganization: { "@id": ids.organization },
       founder: { "@id": ids.founder },
       address,

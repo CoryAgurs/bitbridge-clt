@@ -46,6 +46,15 @@ export function Footer() {
               >
                 Instagram {site.instagram.handle}
               </a>
+              {" · "}
+              <a
+                href={site.googleBusinessProfile}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-4 hover:underline"
+              >
+                Google Business Profile
+              </a>
             </p>
             <p className="mt-2 text-sm text-paper/60">
               {site.founder.name}:{" "}
