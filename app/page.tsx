@@ -10,40 +10,10 @@ import { Problem } from "@/components/Problem";
 import { Process } from "@/components/Process";
 import { Security } from "@/components/Security";
 import { Services } from "@/components/Services";
-import { site, siteUrl } from "@/lib/site";
-
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: site.name,
-  legalName: site.legalName,
-  url: siteUrl,
-  email: site.email,
-  ...(site.phone.tel ? { telephone: site.phone.tel } : {}),
-  areaServed: site.city,
-  sameAs: [site.instagram.url],
-  founder: {
-    "@type": "Person",
-    name: site.founder.name,
-    jobTitle: site.founder.role,
-    image: `${siteUrl}${site.founder.photo}`,
-    sameAs: site.founder.profiles.map((profile) => profile.url),
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      name: site.founder.certification.name,
-      credentialCategory: "certification",
-      recognizedBy: { "@type": "Organization", name: "CompTIA" },
-    },
-  },
-};
 
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
       <Header />
       <main id="main">
         <Hero />

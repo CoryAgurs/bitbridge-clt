@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist } from "next/font/google";
 import "./globals.css";
 import { site, siteUrl } from "@/lib/site";
+import { serializeJsonLd, siteGraph } from "@/lib/structured-data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${site.name} | AI Systems Integration for Charlotte Businesses`,
+    default: site.title,
     template: `%s | ${site.name}`,
   },
-  description: site.pitch,
+  description: site.description,
   applicationName: site.name,
   authors: [{ name: site.founder.name, url: site.founder.profiles[0].url }],
   creator: site.founder.name,
@@ -48,8 +49,8 @@ export const metadata: Metadata = {
     address: false,
   },
   openGraph: {
-    title: `${site.name} | AI Systems Integration for Charlotte Businesses`,
-    description: site.pitch,
+    title: site.title,
+    description: site.description,
     url: "/",
     locale: "en_US",
     type: "website",
@@ -57,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} | AI Systems Integration for Charlotte Businesses`,
-    description: site.pitch,
+    title: site.title,
+    description: site.description,
   },
 };
 
@@ -68,6 +69,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(siteGraph) }}
+        />
+      </head>
       <body className="min-h-full bg-paper font-sans text-ink">{children}</body>
     </html>
   );

@@ -30,7 +30,7 @@ export const site = {
   legalName: "BBC LLC",
   tagline: "AI systems integration for Charlotte businesses",
   city: "Charlotte, NC",
-  email: "bitbridgeco@gmail.com",
+  email: "cory@bitbridgeclt.com",
   // Business line. Leave display empty to hide it everywhere.
   // e.g. { display: "(704) 555-0123", tel: "+17045550123" }
   phone: { display: "(980) 277-1970", tel: "+19802771970" },
@@ -73,8 +73,13 @@ export const site = {
     },
   },
   year: 2026,
-  pitch:
-    "BitBridge CLT integrates AI directly into the systems small businesses already run on, so your team spends less time on repetitive work and more time on the work that actually grows the business.",
+  title: "BitBridge CLT | AI Systems Integration for Charlotte Businesses",
+  // Plain-language summary for structured data and llms.txt. Only state facts the page states.
+  summary:
+    "BitBridge CLT integrates secure AI automation into the tools Charlotte-area small businesses already use: quote follow-up, scheduling, data entry, and free workflow audits.",
+  // Meta, Open Graph, and Twitter description. Keep it within 130–155 characters.
+  description:
+    "BitBridge CLT builds secure AI automation for Charlotte small businesses: quote follow-up, scheduling, data entry. Free 20-min audit: (980) 277-1970.",
   auditSubject: "Free Workflow Audit",
   auditBody: `Hi BitBridge CLT,
 
